@@ -1,0 +1,27 @@
+﻿<Window x:Class="_LOL____LOGINS_COMBO_CATCHER.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_LOL____LOGINS_COMBO_CATCHER"
+        mc:Ignorable="d"
+        Title="[LOL] - LOGINS COMBO CATCHER" Height="210" Width="615" Background="#FF6CA823">
+
+    <Grid Width="600" Height="180">
+        <GroupBox x:Name="group1" Header="Operations:" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" MinWidth="180" Margin="5"/>
+
+        <GroupBox x:Name="File_Source" Header="File source:" HorizontalAlignment="Right" Height="150" VerticalAlignment="Top" MinWidth="380" Margin="10,5"/>
+
+        <TextBox x:Name="pathTextBox" TextWrapping="Wrap" RenderTransformOrigin="1.344,-1" Margin="0,25,98,0" Height="20" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="280" Width="280"/>
+        <Button x:Name="Choose" Content="Choose" Click="Choose_Click" Height="20" Width="75" HorizontalAlignment="Right" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" VerticalAlignment="Top" Margin="0,25,18,0"/>
+        <UniformGrid Margin="0,40,0,0" Height="98" HorizontalAlignment="Left" VerticalAlignment="Top" MinWidth="180" Width="83">
+            <RadioButton x:Name="emailPass" Content="Catch combo (email:pass)" Margin="10,1,-90,0" Height="20" VerticalAlignment="Top"/>
+            <RadioButton x:Name="loginPass" Content="Catch combo (login:pass)" HorizontalAlignment="Right" Width="170" Height="20" Margin="-80,25,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Left" IsChecked="True"/>
+            <CheckBox x:Name="randPass" Content="Randomize passwords" HorizontalAlignment="Center"  Width="170" Height="20" Margin="10,0,-90,0" VerticalAlignment="Top"/>
+
+        </UniformGrid>
+
+        <Button x:Name="Catch" Content="Catch" HorizontalAlignment="Right"  FontSize="24" FontFamily="Segoe UI Black" Background="#FF446A16" Foreground="White" Click="Catch_Click" MinWidth="355" Height="40" Margin="0,67,23,0" VerticalAlignment="Top" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width="346" />
+
+    </Grid>
+</Window>
